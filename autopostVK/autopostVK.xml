@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>System - AutopostVK</name>
+	<author>co11ter</author>
+	<creationDate>2012</creationDate>
+	<license>GNU General Public License</license>
+	<version>1.0</version>
+	<description>AUTOPOSTVK_DESC</description>
+	<files>
+		<filename plugin="autopostVK">autopostVK.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB.plg_system_autopostVK.ini</language>
+        <language tag="ru-RU">ru-RU.plg_system_autopostVK.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="access_token" type="text" default="" />
+				<field name="id" type="text" default="" />
+				<field name="category" type="text" default="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
